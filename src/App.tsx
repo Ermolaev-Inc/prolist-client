@@ -1,7 +1,7 @@
 import React from "react";
 import { SignIn } from "./pages/auth/SignIn";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <SignIn />
