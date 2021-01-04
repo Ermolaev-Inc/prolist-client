@@ -7,16 +7,13 @@ import {
   Image,
   RightSide,
   Logo,
-  Input,
   Button
 } from "../../styles/SignIn.styles";
+import { Input } from "../../components/Input";
 import img from "../../img/Auth_leftside_img.svg";
 import logo from "../../img/ProList_logo.svg";
 
 export const SignIn: React.FC = () => {
-  const kek = {
-    color: "#FF6565"
-  };
   return (
     <Wrapper>
       <LeftSide>
@@ -25,8 +22,8 @@ export const SignIn: React.FC = () => {
       </LeftSide>
       <RightSide>
         <Logo src={logo} alt=""/>
-        <Input type="text" placeholder="Login" theme={{ color: "#FF6565" }}/>
-        <Input type="password" placeholder="Password" theme={{ color: "#79C7FF" }}/>
+        <Input type="text" placeholder="Login" borderFocusColor="#FF6565" />
+        <Input type="password" placeholder="Password" borderFocusColor="#79C7FF" />
         <Button theme={{ color: "#79c7ff" }}>Sign in</Button>
         <Button theme={{ color: "#9f9f9f" }}>Sign up</Button>
       </RightSide>
