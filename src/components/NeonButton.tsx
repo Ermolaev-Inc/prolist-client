@@ -33,7 +33,8 @@ export const NeonButton: React.FC<Partial<Props>> = ({
   return (
     <ButtonStyle
       theme={{ color }}
-      {...props}>
+      {...props}
+    >
       {title}
     </ButtonStyle>
   );
