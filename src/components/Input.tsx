@@ -7,7 +7,7 @@ interface Props {
   borderFocusColor: string;
 }
 
-const SInput = styled.input<Partial<Props>>`
+const InputStyle = styled.input<Partial<Props>>`
   padding: 0;
   border-bottom-width: 4px;
   border-bottom-color: #e6e6e6;
@@ -35,7 +35,7 @@ export const Input: React.FC<Partial<Props>> = ({
   placeholder = "Placeholder",
   borderFocusColor = "#79c7ff"
 }) => {
-  return <SInput
+  return <InputStyle
     type={type}
     placeholder={placeholder}
     theme={{

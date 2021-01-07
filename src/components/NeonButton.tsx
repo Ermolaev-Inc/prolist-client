@@ -6,7 +6,7 @@ interface Props {
   color: string;
 }
 
-const SButton = styled.button<Partial<Props>>`
+const ButtonStyle = styled.button<Partial<Props>>`
   font-size: 24px;
   font-weight: 700;
   border: 0;
@@ -30,5 +30,11 @@ export const NeonButton: React.FC<Partial<Props>> = ({
   color = "#79C7FF",
   ...props
 }) => {
-  return <SButton theme={{ color }} {...props}>{title}</SButton>;
+  return (
+    <ButtonStyle
+      theme={{ color }}
+      {...props}>
+      {title}
+    </ButtonStyle>
+  );
 };
