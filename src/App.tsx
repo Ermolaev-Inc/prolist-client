@@ -1,12 +1,12 @@
 import React from "react";
 import { SignIn } from "./pages/auth/SignIn";
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <SignIn />
     </>
   );
-}
+};
 
 export default App;
