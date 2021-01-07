@@ -56,13 +56,6 @@ export const Logo = styled.img`
   height: 63px;
 `;
 
-export const Button = styled.button`
+export const ButtonWrapper = styled.div`
   margin-top: 5%;
-  font-size: 24px;
-  font-weight: 700;
-  border: 0;
-  background-color: #ffffff;
-  color: ${props => props.theme.color};
-  outline: none;
-  cursor: pointer;
 `;
